@@ -1,0 +1,50 @@
+{
+  "name": "typhon",
+  "version": "0.1.0",
+  "description": "Local CTF labs for learning SQL injection, served via MCP",
+  "type": "module",
+  "bin": {
+    "typhon": "dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "labs/",
+    "shared/"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "lint": "eslint src/",
+    "validate-labs": "tsx scripts/validate-labs.ts",
+    "new-lab": "tsx scripts/new-lab.ts",
+    "prepublishOnly": "npm run build && npm run validate-labs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "@eslint/js": "^9.0.0",
+    "typescript-eslint": "^8.0.0",
+    "typescript": "^5.5.0",
+    "tsx": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ctf",
+    "security",
+    "sql-injection",
+    "mcp",
+    "hacking",
+    "labs"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h4ck0rman/Typhon.git"
+  }
+}

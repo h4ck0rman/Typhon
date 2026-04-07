@@ -1,0 +1,8 @@
+{
+  "labId": "sqli-01-test-lab",
+  "hints": [
+    { "level": 1, "title": "Nudge", "content": "Look at the search input." },
+    { "level": 2, "title": "Direction", "content": "Try a single quote." },
+    { "level": 3, "title": "Solution", "content": "The flag is TYPHON{test_flag_123}." }
+  ]
+}

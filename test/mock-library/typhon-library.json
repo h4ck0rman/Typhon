@@ -1,0 +1,10 @@
+{
+  "typhonLibraryVersion": "1",
+  "name": "test-lib",
+  "displayName": "Test Library",
+  "description": "Mock library for testing",
+  "url": "http://localhost:19876",
+  "categories": ["sqli"],
+  "labCount": 1,
+  "updatedAt": "2026-04-07T00:00:00Z"
+}

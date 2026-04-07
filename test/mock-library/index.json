@@ -1,0 +1,14 @@
+[
+  {
+    "id": "sqli-01-test-lab",
+    "name": "Test Lab",
+    "category": "sqli",
+    "subcategory": "basic",
+    "difficulty": "apprentice",
+    "description": "A test lab for verifying Typhon MCP.",
+    "tags": ["test", "basic"],
+    "dbEngine": "sqlite",
+    "author": "test",
+    "version": "1.0.0"
+  }
+]

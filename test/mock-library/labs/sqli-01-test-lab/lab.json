@@ -1,0 +1,27 @@
+{
+  "id": "sqli-01-test-lab",
+  "name": "Test Lab",
+  "category": "sqli",
+  "subcategory": "basic",
+  "difficulty": "apprentice",
+  "description": "A test lab for verifying the Typhon MCP server.",
+  "briefing": "You are testing the Typhon platform. Find the flag.",
+  "objective": "Submit the correct flag to verify check_flag works.",
+  "tags": ["test", "basic"],
+  "dbEngine": "sqlite",
+  "appTheme": "test-app",
+  "internalPort": 8080,
+  "flag": {
+    "type": "static",
+    "value": "TYPHON{test_flag_123}"
+  },
+  "healthCheck": {
+    "path": "/",
+    "expectedStatus": 200
+  },
+  "youtubeUrl": null,
+  "estimatedMinutes": 5,
+  "prerequisites": [],
+  "author": "test",
+  "version": "1.0.0"
+}

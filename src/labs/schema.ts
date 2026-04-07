@@ -49,8 +49,10 @@ export const FlagSchema = z.discriminatedUnion("type", [
 ]);
 
 export const HealthCheckSchema = z.object({
-  path: z.string().default("/"),
-  expectedStatus: z.number().default(200),
+  path: z.string()
+    .regex(/^\/[a-zA-Z0-9/_.-]*$/, "Health check path must start with / and contain only safe URL characters")
+    .default("/"),
+  expectedStatus: z.number().int().min(100).max(599).default(200),
 });
 
 export const LAB_ID_REGEX = /^[a-z]+-\d{2}-[a-z0-9-]+$/;
